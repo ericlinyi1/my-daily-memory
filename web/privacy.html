@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Memory - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .section p, .section ul {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .section ul {
+            padding-left: 25px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .contact {
+            background: #667eea;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .contact:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        .back-link:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 800px; margin: 0 auto 20px;">
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📖 My Daily Memory</h1>
+            <p>Privacy Policy</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>
+                    My Daily Memory ("we", "our", or "the app") is committed to protecting your privacy. 
+                    This Privacy Policy explains how we handle your journal entries and personal information.
+                </p>
+                <div class="highlight">
+                    <strong>Core Principle:</strong> My Daily Memory is designed with privacy first. 
+                    All journal entries and personal data are stored locally on your device. 
+                    We do not collect, access, or transmit your journal content to any external servers.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Information We Access</h2>
+                <p>My Daily Memory requires minimal permissions to function:</p>
+                <ul>
+                    <li><strong>Local Storage:</strong> To save your journal entries on your device</li>
+                    <li><strong>iCloud (Optional):</strong> If you enable sync, encrypted data is stored in your personal iCloud account</li>
+                    <li><strong>Photos (Optional):</strong> If you choose to add photos to entries, we request access to your photo library</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How Your Data is Stored</h2>
+                <ul>
+                    <li><strong>100% Local Storage:</strong> All journal entries are stored exclusively on your device using iOS secure storage (SwiftData/CoreData)</li>
+                    <li><strong>No Cloud Upload:</strong> We do not upload your journal content to any third-party servers or our own servers</li>
+                    <li><strong>Optional iCloud Sync:</strong> If you enable iCloud sync, your encrypted journal data is stored in your personal iCloud account using Apple's CloudKit framework. Only you can access this data</li>
+                    <li><strong>End-to-End Security:</strong> iCloud data is encrypted both in transit and at rest</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>What We Do NOT Collect</h2>
+                <p>My Daily Memory does not collect, track, or access:</p>
+                <ul>
+                    <li>❌ Your journal entries or personal writings</li>
+                    <li>❌ Analytics or usage data</li>
+                    <li>❌ Device information or identifiers</li>
+                    <li>❌ Location data</li>
+                    <li>❌ Contacts or personal information</li>
+                    <li>❌ Crash reports or diagnostics (unless you explicitly submit feedback)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Third-Party Services</h2>
+                <p>
+                    My Daily Memory does not integrate with any third-party analytics, advertising, 
+                    or tracking services. The app uses only Apple's native frameworks:
+                </p>
+                <ul>
+                    <li><strong>SwiftUI/UIKit:</strong> For the user interface</li>
+                    <li><strong>SwiftData/CoreData:</strong> For local data storage</li>
+                    <li><strong>CloudKit (Optional):</strong> For iCloud sync, managed entirely by Apple</li>
+                    <li><strong>PhotoKit (Optional):</strong> For photo library access</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Data Sharing</h2>
+                <p>
+                    We do not share your data with anyone because we do not have access to it. 
+                    Your journal entries never leave your device or personal iCloud account.
+                </p>
+                <div class="highlight">
+                    <strong>Export:</strong> You can export your journal entries at any time using the app's 
+                    export feature (PDF, Markdown, or text). You control where these exports are saved.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>
+                    My Daily Memory does not collect any personal information from anyone, including 
+                    children under 13. The app is suitable for all ages. Parents can use iOS parental 
+                    controls to manage their children's app usage.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Your Rights and Controls</h2>
+                <ul>
+                    <li><strong>Full Ownership:</strong> You own all your journal entries and data</li>
+                    <li><strong>Delete Anytime:</strong> Delete individual entries, tags, or all data through the app settings</li>
+                    <li><strong>Export Anytime:</strong> Export your complete journal in multiple formats</li>
+                    <li><strong>Disable iCloud:</strong> Turn off iCloud sync at any time in the app or iOS Settings</li>
+                    <li><strong>Uninstall:</strong> Deleting the app removes all local data. iCloud data can be deleted through iOS Settings → iCloud → Manage Storage</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Data Security</h2>
+                <p>We implement several security measures:</p>
+                <ul>
+                    <li><strong>Secure Storage:</strong> Data is encrypted using iOS native encryption</li>
+                    <li><strong>Device Security:</strong> Access protected by your device passcode/biometrics</li>
+                    <li><strong>No Remote Access:</strong> No server-side authentication or remote access to your data</li>
+                    <li><strong>Open Source Libraries:</strong> We only use well-vetted, open-source iOS frameworks</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Changes to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy to reflect changes in features or legal requirements. 
+                    Updates will be posted on this page with a new "Last Updated" date. 
+                    Continued use of the app after changes constitutes acceptance of the updated policy.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have questions, concerns, or feedback regarding this Privacy Policy or 
+                    My Daily Memory, please contact us:
+                </p>
+                <p style="text-align: center;">
+                    <a href="mailto:support@mydailymemory.app" class="contact">📧 support@mydailymemory.app</a>
+                </p>
+            </div>
+
+            <div class="last-updated">
+                Last Updated: April 26, 2026
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 My Daily Memory. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <strong>Privacy-First Journaling</strong> | No Data Collection | 100% Local Storage
+            </p>
+        </div>
+    </div>
+</body>
+</html>
