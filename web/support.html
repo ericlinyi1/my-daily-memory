@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Memory - Support</title>
+    <meta name="description" content="Get help and support for My Daily Memory iOS App">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .screenshot-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .screenshot-section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        
+        .screenshot {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            margin: 0 auto;
+        }
+        
+        .faq-section h2 {
+            color: #1d1d1f;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 25px;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-item h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        .faq-item p {
+            color: #424245;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .faq-item ul {
+            margin-left: 25px;
+            color: #424245;
+        }
+        
+        .faq-item li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 40px;
+        }
+        
+        .contact-card h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin: 10px;
+        }
+        
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .feature-box {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .feature-box .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-box h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .feature-box p {
+            color: #424245;
+            font-size: 0.95em;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            margin: 8px 0;
+            opacity: 0.8;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .screenshot {
+                max-width: 300px;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+            
+            .contact-button {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 My Daily Memory</h1>
+        <p>Support & Help Center</p>
+    </div>
+
+    <div class="container">
+        <!-- Screenshot Section -->
+        <div class="card screenshot-section">
+            <h2>See My Daily Memory in Action</h2>
+            <p style="color: #666; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Track your daily activities, meals, exercise, and plans all in one beautiful interface.
+                Stay organized and build healthy habits effortlessly.
+            </p>
+            <img src="images/app-screenshot.jpg" alt="My Daily Memory App Screenshot" class="screenshot">
+        </div>
+
+        <!-- Features -->
+        <div class="card">
+            <h2 style="text-align: center; color: #1d1d1f; font-size: 2.2em; margin-bottom: 30px;">
+                Key Features
+            </h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="icon">📝</div>
+                    <h3>Daily Journal</h3>
+                    <p>Record your thoughts, feelings, and memories with ease</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">📊</div>
+                    <h3>Activity Tracking</h3>
+                    <p>Monitor diet, exercise, and spending habits</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">📅</div>
+                    <h3>Plan Ahead</h3>
+                    <p>Organize tomorrow's schedule and goals</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>All data stored locally on your device</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="card faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>❓ How do I get started?</h3>
+                <p>
+                    Simply download My Daily Memory from the App Store, open the app, and start your first entry. 
+                    No sign-up or account required!
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💾 Where is my data stored?</h3>
+                <p>
+                    All your journal entries are stored locally on your device. We do not collect, access, 
+                    or transmit any of your personal data to external servers.
+                </p>
+                <p>
+                    <strong>Optional:</strong> You can enable iCloud sync to backup your data across your Apple devices. 
+                    iCloud data is encrypted and only accessible by you.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🔐 Is my data secure?</h3>
+                <p>Yes! My Daily Memory uses multiple security layers:</p>
+                <ul>
+                    <li>iOS device encryption for local storage</li>
+                    <li>Optional Face ID / Touch ID app lock</li>
+                    <li>No internet connection required (your data never leaves your device)</li>
+                    <li>End-to-end encryption for iCloud sync (if enabled)</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>📱 Which devices are supported?</h3>
+                <p>
+                    My Daily Memory requires iOS 17.0 or later and works on:
+                </p>
+                <ul>
+                    <li>iPhone (all models with iOS 17+)</li>
+                    <li>iPad (all models with iOS 17+)</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>💡 How do I track my activities?</h3>
+                <p>
+                    From the home screen, you can:
+                </p>
+                <ul>
+                    <li>Tap any category (Record, Cost, Diet, Exercise) to add entries</li>
+                    <li>View your weekly summary at a glance</li>
+                    <li>Plan tomorrow's activities using the "Plan Tomorrow" button</li>
+                    <li>Use the search feature to find past entries</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>🏷️ Can I organize my entries?</h3>
+                <p>
+                    Yes! You can create custom tags and categories to organize your journal entries. 
+                    Filter entries by tag to quickly find related memories.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📤 Can I export my data?</h3>
+                <p>
+                    Yes! My Daily Memory allows you to export your journal in multiple formats:
+                </p>
+                <ul>
+                    <li>PDF documents (perfect for printing or sharing)</li>
+                    <li>Markdown files (for use with other apps)</li>
+                    <li>Plain text files</li>
+                </ul>
+                <p>
+                    You have complete control over where these files are saved and who can access them.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🔔 How do reminders work?</h3>
+                <p>
+                    You can set up daily reminders to help build a journaling habit:
+                </p>
+                <ul>
+                    <li>Go to Settings → Reminders</li>
+                    <li>Enable notifications</li>
+                    <li>Choose your preferred time</li>
+                    <li>Receive gentle reminders to journal</li>
+                </ul>
+                <p>
+                    Reminders are optional and can be disabled at any time.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🌙 Does the app support Dark Mode?</h3>
+                <p>
+                    Yes! My Daily Memory automatically adapts to your iOS system appearance settings. 
+                    Switch between Light and Dark modes in iOS Settings → Display & Brightness.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🆓 Is the app free?</h3>
+                <p>
+                    Yes! My Daily Memory is completely free to download and use. 
+                    There are no in-app purchases, subscriptions, or hidden fees.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🔄 How do I sync across devices?</h3>
+                <p>
+                    Enable iCloud sync in Settings to automatically sync your journal across all your 
+                    Apple devices (iPhone, iPad) signed in with the same Apple ID.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🗑️ How do I delete my data?</h3>
+                <p>
+                    To delete all your data:
+                </p>
+                <ul>
+                    <li>Go to Settings → Privacy → Delete All Data</li>
+                    <li>Confirm your choice</li>
+                    <li>Alternatively, uninstalling the app will also delete all local data</li>
+                </ul>
+                <p>
+                    <strong>iCloud data:</strong> If you enabled iCloud sync, manage your data through 
+                    iOS Settings → iCloud → Manage Storage → My Daily Memory → Delete Data.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🐛 I found a bug. How do I report it?</h3>
+                <p>
+                    We appreciate your feedback! Please email us with:
+                </p>
+                <ul>
+                    <li>Your iOS version (Settings → General → About → iOS Version)</li>
+                    <li>Your device model (e.g., iPhone 15 Pro)</li>
+                    <li>A description of the issue</li>
+                    <li>Steps to reproduce the bug (if applicable)</li>
+                </ul>
+                <p>
+                    Send bug reports to: <strong>support@mydailymemory.app</strong>
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💬 How can I request a new feature?</h3>
+                <p>
+                    We'd love to hear your ideas! Email your feature requests to 
+                    <strong>support@mydailymemory.app</strong>. We read every suggestion and consider 
+                    them for future updates.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="card contact-card">
+            <h2>Need More Help?</h2>
+            <p>
+                Our support team is here to help you. Reach out with any questions, 
+                feedback, or concerns.
+            </p>
+            <a href="mailto:support@mydailymemory.app" class="contact-button">
+                📧 Email Support
+            </a>
+            <a href="app-store-privacy-policy.html" class="contact-button">
+                🔒 Privacy Policy
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>&copy; 2026 My Daily Memory. All rights reserved.</strong></p>
+        <p style="margin-top: 15px;">
+            <a href="index.html">Home</a> • 
+            <a href="support.html">Support</a> • 
+            <a href="app-store-privacy-policy.html">Privacy Policy</a>
+        </p>
+        <p style="margin-top: 15px; font-size: 0.85em;">
+            🔒 Privacy-First Design | 📱 100% Local Storage | ✓ No Data Collection
+        </p>
+    </footer>
+</body>
+</html>
